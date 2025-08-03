@@ -1,1 +1,1 @@
-# Student_Grade_Galculator
+# Student_Grade_calculator
