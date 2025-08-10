@@ -2,13 +2,13 @@ import javax.swing.*;
 
 public class StudentGradeCalculator extends JFrame {
     JLabel nameLabel;
-    JLabel[] subjectLabels = new JLabel[10];
+    JLabel[] subjectLabels = new JLabel[12];
     JTextField nameField;
-    JTextField[] subjectFields = new JTextField[10];
+    JTextField[] subjectFields = new JTextField[12];
 
     public StudentGradeCalculator() {
         setTitle("🎓 Student Grade Calculator");
-        setSize(450, 600);
+        setSize(450, 850);
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
@@ -21,7 +21,7 @@ public class StudentGradeCalculator extends JFrame {
         add(nameField);
 
         int yPosition = 70;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 12; i++) {
             subjectLabels[i] = new JLabel("Subject " + (i + 1) + " Marks:");
             subjectLabels[i].setBounds(30, yPosition, 120, 25);
             add(subjectLabels[i]);
@@ -41,5 +41,6 @@ public class StudentGradeCalculator extends JFrame {
         new StudentGradeCalculator();
     }
 }
+
 
 
